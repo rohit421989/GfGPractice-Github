@@ -5,7 +5,7 @@ public class GCDofTwoNumbers
 
 	public static void main(String[] args) 
 	{
-		int val=new GCDofTwoNumbers().gcd(10, 420);
+		int val=new GCDofTwoNumbers().gcd(100, 420);
 		System.out.println(val);
 	}
 	
