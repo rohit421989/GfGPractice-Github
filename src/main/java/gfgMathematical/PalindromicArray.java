@@ -3,7 +3,7 @@ package gfgMathematical;
 public class PalindromicArray {
 
 	public static void main(String[]args) {
-		int[]a= {1001,2002,3003,5005,6006};
+		int[]a= {1001,2002,3103,5005,6006};
 		int i=palinArray(a,a.length);
 		if (i==1)
 			System.out.println("Palindrome");
@@ -17,7 +17,6 @@ public class PalindromicArray {
 	{
 		int []originalNumber=new int[n];
 		int []reversedNumber=new int[n];
-		int val=0;
 		for(int i=0;i<n;i++) 
 		{
 
@@ -33,14 +32,12 @@ public class PalindromicArray {
 		for(int j=0;j<n;j++) 
 		{
 
-			if(originalNumber[j]==reversedNumber[j]) 
+			if(originalNumber[j]!=reversedNumber[j]) 
 
-				val=val+1;
+				return 0;
 		}
-		if(val==n)
+		
 			return 1;
-		else
-			return 0;
 
 
 	}
