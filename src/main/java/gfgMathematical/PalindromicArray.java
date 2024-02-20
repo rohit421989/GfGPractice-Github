@@ -31,13 +31,10 @@ public class PalindromicArray {
 
 		for(int j=0;j<n;j++) 
 		{
-
-			if(originalNumber[j]!=reversedNumber[j]) 
-
+			if(originalNumber[j]!=reversedNumber[j])
 				return 0;
 		}
-		
-			return 1;
+		return 1;
 
 
 	}
